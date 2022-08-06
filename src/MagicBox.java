@@ -1,6 +1,7 @@
 import java.util.Random;
 
 public class MagicBox<T> {
+    Random random = new Random();
     protected int maxObjects;
     protected T[] items;
     private int count = 0;
@@ -27,8 +28,7 @@ public class MagicBox<T> {
                 throw new RuntimeException("Коробка не полна, осталось заполнить ячеек - " + (items.length - count));
             }
         }
-
-        Random random = new Random();
+        
         int randomInt = random.nextInt(maxObjects);
 
         return items[randomInt];

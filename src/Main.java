@@ -4,7 +4,7 @@ public class Main {
         box1.add(1);
         box1.add(3);
         box1.add(5);
-        box1.add(70);
+        //box1.add(70);
 
         System.out.println("Ваш результат: " + box1.pick());
 
